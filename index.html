@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit And Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('bgg/fill.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .left{
+             position: absolute;
+            display: inline-block;
+            /* border: 4px solid red; */
+            left: 14px;
+            top: 20px;
+            
+        }
+        .mid{
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+            /* border: 4px solid red; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .right{
+            color: white;
+            position: absolute;
+            right: 14px;
+            top: 20px;
+         display: inline-block;
+         /* border: 4px solid red; */
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        padding: 4px 8px;
+        text-decoration:none;
+            
+        }
+    .navbar li a:hover, .navbar li a.prav{
+        color: red;
+        text-decoration: underline;
+        }
+        img{
+            height: 138px;
+            width: 171px;
+        }
+        .button{
+            padding: 5px 5px;
+            margin: 3px 3px;
+            background-color: black;
+            color: red;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor:pointer;
+        }
+        .button:hover{
+            background-color: grey;
+        }
+        .container{
+            margin: 152px 139px;
+            padding: 62px 27px;
+            border: 2px solid white;
+            color: white;
+            width: 34%;
+            border-radius: 10px;
+
+        }
+        .formgroups input{
+            margin: 9px auto;
+            padding: 8px 8px;
+            display: block;
+            width: 70%;
+            border-radius: 4px;
+            border: 2px solid red;
+            text-align: center;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 20%;
+            margin:  10px auto;
+        }
+     
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box is for logo  -->
+        <div class="left">
+         <img src="bgg/logoo.png" alt="">
+        </div>
+        <!-- mid box is for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="prav">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- riht box is for buttons  -->
+        <div class="right">
+         <button class="button">Contact Us</button>
+         <button class="button">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>The Best Gym Is Now Available </h1>
+        <form action="noaction.php">
+            <div class="formgroups">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="formgroups">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="formgroups">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="formgroups">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+        </form>
+        <button class="button">Submit</button>
+    </div>
+</body>
+</html>
